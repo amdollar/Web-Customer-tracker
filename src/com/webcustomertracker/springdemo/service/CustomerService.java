@@ -1,17 +1,14 @@
-package com.webcustomertracker.springdemo.dao;
+package com.webcustomertracker.springdemo.service;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.webcustomertracker.springdemo.entity.Customer;
 
-@Repository
-public interface CustomerDao {
-	public List<Customer> getCustomerList();
+public interface CustomerService {
+	public List<Customer> getCustomers();
 
 	public void addCustomer(Customer customer);
-	
+
 	public Customer getCustomerById(int customerId);
 
 	public void deleteCustomerById(int customerId);

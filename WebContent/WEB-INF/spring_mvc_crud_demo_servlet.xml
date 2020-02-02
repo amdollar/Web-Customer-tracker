@@ -13,10 +13,12 @@
 		base-package="com.webcustomertracker.springdemo" />
 
 	<mvc:annotation-driven />
+	
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="WEB-INF/view/"></property>
+		<property name="prefix" value="/WEB-INF/view/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 
